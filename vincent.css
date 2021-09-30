@@ -8,44 +8,49 @@
 }
 
 body{
-    background-color: aqua;
+    background-color: gray;
+    height: 300vh;
 }
 
 header{
-    background-color: blue;
+    height: 100vh;
+    background: linear-gradient(#d3d156, #c55900);
 }
 
 .header-objects{
     display: flex;
-    justify-content: space-between;
-    padding: 2.5vh 0 2.5vh 0;
+    justify-content: space-around;
+    padding: 3vh 0 3vh 0;
 }
 
 .MadeBy{
-    padding-left: 5vh;
+    padding-right: 15vh;
     margin: auto 0;
 }
 
 .Buttons-Div-Size{
     width: max-content;
     margin: auto 0;
+    padding-left: 15vh;
+
 }
 
 .Redirect-Buttons{
     display: flex;
     justify-content: center;
-    padding-right: 5vh;
     margin: auto 0;
 }
 .Redirect-Buttons p{
     padding: 1vh;
     margin: 5px;
     border-radius: 5px;
+    font-size: 18px;
 }
 
 .Redirect-Buttons p:hover{
-    background-color: red;
-    transition: 1s;
+    background-color: rgb(31, 31, 31);
+    color: whitesmoke;
+    transition: 0.5s;
 }
 
 .Display-CanarDevPage{
@@ -57,13 +62,74 @@ header{
     padding: 1vh;
     margin: 5px;
     border-radius: 5px;
+    font-size: 18px;
 }
 
 .Display-CanarDevPage p:hover{
-    background-color: yellow;
-    transition: 1s;
+    background-color: rgb(70, 70, 0);
+    color: whitesmoke;
+    transition: 0.5s;
 }
 
 .Width-Button-CanarDevPage{
     width: max-content;
+}
+
+.header-objects-midle{
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0 5vh 0;
+}
+
+.Description-Header{
+    width: 40vh;
+    margin: 8.5vh 0 8.5vh 4vh;
+    font-size: 20px;
+    padding-top: 4vh;
+
+}
+
+.Description-Header h4{
+    padding-top: 2vh;
+}
+
+.Title-Header{
+    display: flex;
+    justify-content: end;
+    margin: 8.5vh 4vh 8.5vh 0;
+    font-size: 40px;
+    text-align: end;
+}
+
+.Title{
+    width: min-content;
+}
+
+.BlockArrow{
+    text-align: center;
+    animation: move 1.5s infinite;
+}
+
+.GoDown{
+    font-size: 62px;
+}
+
+@keyframes move{
+    0%,
+    100% {
+        color: yellow;
+        text-shadow: 0 0 10px rgb(207, 187, 0), 0 0 50px rgb(207, 187, 0), 0 0 80px rgb(207, 187, 0);
+    }
+
+    65%,
+    100% {
+        color: black;
+        text-shadow: none;
+    }
+
+    100%,
+    100% {
+        color: yellow;
+        text-shadow: 0 0 10px rgb(207, 187, 0), 0 0 50px rgb(207, 187, 0), 0 0 80px rgb(207, 187, 0);
+    }
 }
