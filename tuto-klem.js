@@ -104,3 +104,15 @@ let hello = ' say hello !';
 hello;
 let greeting = name + hello;
 greeting;
+
+const button = document.querySelector('button');
+
+button.onclick = function() {
+
+    let name = prompt('What\'s your name ?');
+    alert('hi ' + name + ', nice to see you here !');
+
+}
+let myName = 'clément';
+let age = 20;
+let character = {name : 'anakin', rank : 'jedi knight'};
