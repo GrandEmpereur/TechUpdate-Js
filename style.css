@@ -1,6 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); /* import a font from google font */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+/************************************************************************************* NAVBAR *************************************************************************************/
+nav{
+    display: flex; 
+    justify-content: space-around; /* set the div and ul with the same space */
+    align-items: center; /* center the elements inside the parent */
+    min-height: 8vh;/* minimum height possible set by hand */
+    background-color: chocolate;
+    color: whitesmoke;/* change the text color */
+}
+
+.title{
+    text-transform: uppercase;/* switch lowercase to uppercase */
+    letter-spacing: 2px;/* put a space between the letters */
+    font-size: 20px;/* change the size of the font */
+}
+
+.nav-links{
+    display: flex;
+    width: 40%;/* change the width of the div */
+    justify-content: space-around;
+    letter-spacing: 1px;
+    font-weight: bolder;/* change the state of the font */
+}
+
+.nav-links li{
+    list-style: none;/* remove the dots in front of the list items */
+}
+
+.nav-links a{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.burger-menu{
+    display: none;/* make the burger menu disappear in desktop device */
+}
+
+.burger-menu div{
+    width: 30px;/* length of the burger menu lines */
+    height: 5px;/* height of the burger menu lines */
+    background-color: whitesmoke;/* color of the burger menu lines */
+    margin: 5px;/* distribute equitably within the div */
+}
+
+@media screen and (max-width: 1300px){
+
+    body{
+        display: none;
+    }
 }
