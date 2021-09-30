@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: aqua;
+}
+
+header{
+    background-color: blue;
+}
+
+.header-objects{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5vh 0 2.5vh 0;
+}
+
+.MadeBy{
+    padding-left: 5vh;
+    margin: auto 0;
+}
+
+.Buttons-Div-Size{
+    width: max-content;
+    margin: auto 0;
+}
+
+.Redirect-Buttons{
+    display: flex;
+    justify-content: center;
+    padding-right: 5vh;
+    margin: auto 0;
+}
+.Redirect-Buttons p{
+    padding: 1vh;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.Redirect-Buttons p:hover{
+    background-color: red;
+    transition: 1s;
+}
+
+.Display-CanarDevPage{
+    display: flex;
+    justify-content: center;
+}
+
+.Display-CanarDevPage p{
+    padding: 1vh;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.Display-CanarDevPage p:hover{
+    background-color: yellow;
+    transition: 1s;
+}
+
+.Width-Button-CanarDevPage{
+    width: max-content;
+}
