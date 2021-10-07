@@ -9,6 +9,9 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- PrimsCSS -->
+    <link href="PrimsJs/prism.css" rel="stylesheet" />
+
 </head>
 <body>
     <div class="sidebar">
@@ -71,11 +74,65 @@
         <div class="text">Dashboard</div>
         <div class="card">
             <h2> Cours 1 | Nav bar </h2>
-            <div class="cour1">
-                <p>Js</p>
+            <div class="cour">
+                <h2 >Nav Bar code </h2>
+                <div class="section1">
+
+    <P>Hello for this first js course 
+        We will see in a first time how to realize the nav bar of the site 
+        
+        Setp 1 | you will have to create an html and js file 
+        then in your html create a nav bar
+
+        Setp 2 | you will have to create an html and js file 
+        then in your html create a nav bar
+    </P>
+
+    <pre><code class="language-html">
+let sidebar = document.querySelector(".sidebar");
+let closeBtn = document.querySelector("#btn");
+let searchBtn = document.querySelector(".bx-search");
+</code></pre>
+
+<pre><code class="language-Js">
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+</code></pre>
+
+                </div>
+
+
+<pre><code class="language-Js">
+    closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();//calling the function(optional)
+    });
+
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+    });
+</code></pre>
+
+<pre><code class="language-Js">
+// following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+        if(sidebar.classList.contains("open")){
+            closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+        }else {
+            closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+        }
+    }
+</code></pre>
             </div>
     </section>
 
-<script src="/js/app.js"></script>    
+<!-- Prims Js Scripte -->
+<script src="PrimsJs/prism.js"></script>
+
+<!-- Js Scripte -->
+<script src="js/app.js"></script>
+
 </body>
 </html>

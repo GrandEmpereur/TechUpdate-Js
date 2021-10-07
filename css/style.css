@@ -179,5 +179,7 @@
   z-index: 2; 
 }
 
-
-
+.home-section .card .cour h2 {
+  display: flex;
+  justify-content: center;
+}
