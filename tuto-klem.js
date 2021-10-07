@@ -59,9 +59,9 @@ function checkGuess() { //function
         }
     }
 
-guessCount++;
-guessField.value = '';
-guessField.focus();
+    guessCount++;
+    guessField.value = '';
+    guessField.focus();
 }
 guessSubmit.addEventListener('click', checkGuess);
 
