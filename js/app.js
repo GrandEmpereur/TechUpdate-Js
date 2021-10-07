@@ -7,7 +7,7 @@ closeBtn.addEventListener("click", ()=>{
     menuBtnChange();//calling the function(optional)
 });
 
-  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
     sidebar.classList.toggle("open");
     menuBtnChange(); //calling the function(optional)
 });
@@ -20,3 +20,4 @@ function menuBtnChange() {
         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
     }
 }
+

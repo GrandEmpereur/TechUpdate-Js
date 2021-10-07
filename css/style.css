@@ -7,6 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* Nav Bar   */
+
 .sidebar{
   position: fixed;
   left: 0;
@@ -162,3 +165,19 @@
     display: none;
     }
 }
+
+
+/* Contant  */
+
+.card {
+  position: relative;
+  min-height: 100vh;
+  top: 0;
+  left: 50px;
+  width: calc(100% - 50px);
+  transition: all 0.5s ease;
+  z-index: 2; 
+}
+
+
+
