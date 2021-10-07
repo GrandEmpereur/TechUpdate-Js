@@ -76,55 +76,51 @@
             <h2> Cours 1 | Nav bar </h2>
             <div class="cour">
                 <h2 >Nav Bar code </h2>
+                <div class="text">
+                    <span>Hello for this first js course We will see how to realize the nav bar of the site </span>  
+                    <P> 
+                        Setp 1 | you will have to create an html and js file 
+                        then in your html create a nav bar
+                        <br>
+                        Setp 2 | In your js file you will have to initialize to have all your elements with the document.querySelector
+                    </P>
+                </div>
+    
                 <div class="section1">
-
-    <P>Hello for this first js course 
-        We will see in a first time how to realize the nav bar of the site 
-        
-        Setp 1 | you will have to create an html and js file 
-        then in your html create a nav bar
-
-        Setp 2 | you will have to create an html and js file 
-        then in your html create a nav bar
-    </P>
-
-    <pre><code class="language-html">
-let sidebar = document.querySelector(".sidebar");
-let closeBtn = document.querySelector("#btn");
-let searchBtn = document.querySelector(".bx-search");
-</code></pre>
-
-<pre><code class="language-Js">
+                    <pre><code class="language-js">
     let sidebar = document.querySelector(".sidebar");
     let closeBtn = document.querySelector("#btn");
     let searchBtn = document.querySelector(".bx-search");
-</code></pre>
-
+                    </code></pre>
                 </div>
 
-
-<pre><code class="language-Js">
+                <div class="text">
+                    Setp 3 | Add an "open" class on the burger menu to have a focus on whether the menu should be opened or closed 
+                </div>
+                <div class="section2">
+                    <pre><code class="language-Js">
     closeBtn.addEventListener("click", ()=>{
         sidebar.classList.toggle("open");
         menuBtnChange();//calling the function(optional)
     });
+                    </code></pre>
+                </div>
 
-    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
-        sidebar.classList.toggle("open");
-        menuBtnChange(); //calling the function(optional)
-    });
-</code></pre>
+                <div class="text">
+                    Setp 4 | creates a function that will allow us to interact with the menue burger  
+                </div>
 
-<pre><code class="language-Js">
-// following are the code to change sidebar button(optional)
-    function menuBtnChange() {
-        if(sidebar.classList.contains("open")){
-            closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
-        }else {
-            closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+                <div class="section3">
+                    <pre><code class="language-Js">
+        function menuBtnChange() {
+            if(sidebar.classList.contains("open")){
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            }else {
+                closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+            }
         }
-    }
-</code></pre>
+                    </code></pre>
+                </div>
             </div>
     </section>
 
