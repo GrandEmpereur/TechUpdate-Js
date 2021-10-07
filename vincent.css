@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+    height: max-content;
+}
+
+header{
+    height: 100vh;
+    background: linear-gradient(#d3d156, #c55900);
+}
+
+.header-objects{
+    display: flex;
+    justify-content: space-around;
+    padding: 3vh 0 3vh 0;
+}
+
+.MadeBy{
+    padding-right: 15vh;
+    margin: auto 0;
+}
+
+.Buttons-Div-Size{
+    width: max-content;
+    margin: auto 0;
+    padding-left: 15vh;
+
+}
+
+.Redirect-Buttons{
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+}
+.Redirect-Buttons a{
+    padding: 1vh;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+}
+
+.Redirect-Buttons p:hover{
+    background-color: rgb(31, 31, 31);
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+.header-objects-midle{
+    display: flex;
+    justify-content: center;
+    padding: 14vh 0 6vh 0;
+}
+
+.Description-Header{
+    width: 40vh;
+    margin: 8.5vh 0 8.5vh 4vh;
+    font-size: 20px;
+    padding-top: 4vh;
+
+}
+
+.Description-Header h4{
+    padding-top: 2vh;
+}
+
+.Title-Header{
+    display: flex;
+    justify-content: end;
+    margin: 8.5vh 4vh 8.5vh 0;
+    font-size: 40px;
+    text-align: end;
+}
+
+.Title{
+    width: min-content;
+}
+
+.BlockArrow{
+    text-align: center;
+    animation: move 1.5s infinite;
+}
+
+.GoDown{
+    font-size: 62px;
+}
+
+@keyframes move{
+    0%,
+    100% {
+        color: yellow;
+        text-shadow: 0 0 10px rgb(207, 187, 0), 0 0 50px rgb(207, 187, 0), 0 0 80px rgb(207, 187, 0);
+    }
+
+    65%,
+    100% {
+        color: black;
+        text-shadow: none;
+    }
+
+    100%,
+    100% {
+        color: yellow;
+        text-shadow: 0 0 10px rgb(207, 187, 0), 0 0 50px rgb(207, 187, 0), 0 0 80px rgb(207, 187, 0);
+    }
+}
+
+.arrowPresentation{
+    height: max-content;
+    background-color: #c55900;
+}
+
+.ArrowPresDiv{
+    padding: 14vh 0 6vh 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ArrowPresDivTitle{
+    font-size: 30px;
+    text-align: start;
+    padding-left: 2vh;
+    padding-top: 1vh;
+}
+
+.ArrowPresDivText{
+    padding-right: 2vh;
+    text-align: end;
+}
+
+.prismCode{
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 5vh;
+}
+
+.interPrismCode{
+    text-align: center;
+    padding: 2vh 0 7vh 0;
+}
+
+.scrollingPresentation{
+    height: max-content;
+    background: linear-gradient(#c55900, #d3d156);
+}

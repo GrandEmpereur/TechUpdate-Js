@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Tech Update  | Patrick </title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PrimsCSS -->
+    <link href="PrimsJs/prism.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">Tech Update</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+        <li>
+            <a href="#">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+
+        <li>
+        <a href="index.html">
+            <i class='bx bx-home-smile'></i>
+            <span class="links_name">Home</span>
+        </a>
+        <span class="tooltip">Home</span>
+        </li>
+
+        <li>
+            <a href="vincent.html">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">VinVin</span>
+            </a>
+            <span class="tooltip">VinVin</span>
+        </li>
+
+        <li>
+            <a href="tuto-klem.html">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">KleKle</span>
+            </a>
+            <span class="tooltip">KleKle</span>
+        </li>
+
+        <li>
+            <a href="#">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">Melvin</span>
+            </a>
+            <span class="tooltip">Melvin</span</>>
+        </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <div class="text">Dashboard</div>
+        <div class="card">
+            <h2> Cours 1 | Nav bar </h2>
+            <div class="cour">
+                <h2 >Nav Bar code </h2>
+                <div class="text">
+                    <span>Hello for this first js course We will see how to realize the nav bar of the site </span>  
+                    <P> 
+                        Setp 1 | you will have to create an html and js file 
+                        then in your html create a nav bar
+                        <br>
+                        Setp 2 | In your js file you will have to initialize to have all your elements with the document.querySelector
+                    </P>
+                </div>
+    
+                <div class="section1">
+                    <pre><code class="language-js">
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+                    </code></pre>
+                </div>
+
+                <div class="text">
+                    Setp 3 | Add an "open" class on the burger menu to have a focus on whether the menu should be opened or closed 
+                </div>
+                <div class="section2">
+                    <pre><code class="language-Js">
+    closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();//calling the function(optional)
+    });
+                    </code></pre>
+                </div>
+
+                <div class="text">
+                    Setp 4 | creates a function that will allow us to interact with the menue burger  
+                </div>
+
+                <div class="section3">
+                    <pre><code class="language-Js">
+        function menuBtnChange() {
+            if(sidebar.classList.contains("open")){
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            }else {
+                closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+            }
+        }
+                    </code></pre>
+                </div>
+            </div>
+    </section>
+<footer>
+    <div class="credit">
+        
+        <p>Created By <a href="https://github.com/GrandEmpereur" target="_blank">GrandEmpereur Patrick</a> | &copy; 2021 All rights reserved.</p>
+    </div>
+</footer>
+<!-- Prims Js Scripte -->
+<script src="PrimsJs/prism.js"></script>
+
+<!-- Js Scripte -->
+<script src="js/app.js"></script>
+
+</body>
+</html>

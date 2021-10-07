@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="PrimsJs/prism.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Document</title>
+
+    <!-- Prims Css -->
+    <link href="PrimsJs/prism.css" rel="stylesheet" />
+    <title>Home</title>
 </head>
 <body>
     <nav>
@@ -16,16 +20,19 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#">Home Page</a>
+                <a href="index.html">Soren</a>
             </li>
             <li>
-                <a href="#">Vincent</a>
+                <a href="vincent.html">Vincent</a>
             </li>
             <li>
-                <a href="#">Patrick</a>
+                <a href="patrick.html">Patrick</a>
             </li>
             <li>
                 <a href="tuto-klem.html">Clement</a>
+            </li>
+            <li>
+                <a href="#">Melvin</a>
             </li>
         </ul>
         <div class="burger-menu">
@@ -34,6 +41,113 @@
             <div class="line_3"></div>
         </div>
     </nav>
+
+<div class="card">
+<div class="card-title">
+    <h3>Presentation</h3>
+</div>
+    <div class="card-image"><img src="https://s2.qwant.com/thumbr/700x0/6/3/e118073f4c6519437d336d9295027f5af446e8ccbe594cb27ad0e20c020fdc/hello-world.png?u=https%3A%2F%2Fwww.mvps.net%2Fdocs%2Fwp-content%2Fuploads%2F2019%2F03%2Fhello-world.png&q=0&b=1&p=0&a=0"/></div>
+    <div class="card-body">
+        <div class="card-excerpt">
+            <p>Here you will see how to do this type of card ! (scroll down 😉)</p>
+        </div>
+    </div>
+</div>
+<p class="explain-card">To do this card you need to :</p>
+<div class="prismCode">
+    <pre><code class="language-css">
+        /* The complete card */
+        .card{
+            width: 36%;
+            margin: 0 auto;
+            margin-top: 5%;
+            padding: 1%; 
+            box-shadow: 0px 5px 20px #999;
+            border-radius: 5px;
+        }
+        /* Title Presentation */
+        .card-title{
+            padding: 2% 0 5% 5%;
+        }
+        /* The card image */
+        .card-image{
+            overflow: hidden;
+        }
+    </code></pre>
+</div>
+<p class="explain-card-content">It's Simple as that !</p>
+<p class="explain-nav">To do this nav you need to do :</p>
+<div class="prismCode">
+    <pre><code class="language-css">
+        nav{
+            display: flex; 
+            justify-content: space-around; /* set the div and ul with the same space */
+            align-items: center; /* center the elements inside the parent */
+            min-height: 8vh;/* minimum height possible set by hand */
+            background-color: chocolate;
+            color: whitesmoke;/* change the text color */
+        }
+        
+        .title{
+            text-transform: uppercase;/* switch lowercase to uppercase */
+            letter-spacing: 2px;/* put a space between the letters */
+            font-size: 20px;/* change the size of the font */
+        }
+        
+        .nav-links{
+            display: flex;
+            width: 40%;/* change the width of the div */
+            justify-content: space-around;
+            letter-spacing: 1px;
+            font-weight: bolder;/* change the state of the font */
+        }
+        
+        .nav-links li{
+            list-style: none;/* remove the dots in front of the list items */
+        }
+        
+        .nav-links a{
+            color: whitesmoke;
+            font-size: 15px;
+        }
+        
+        .burger-menu{
+            display: none;/* make the burger menu disappear in desktop device */
+            cursor: pointer;
+        }
+
+        .burger-menu div{
+            width: 30px;/* length of the burger menu lines */
+            height: 3px;/* height of the burger menu lines */
+            background-color: whitesmoke;/* color of the burger menu lines */
+            margin: 5px;/* distribute equitably within the div */
+        }
+    </code></pre>
+</div>
+<p class="explain-nav">and for the javascript you need to do :</p>
+<div class="prismCode">
+    <pre><code class="language-js">
+        const navSlide = () =>{
+            const burger = document.querySelector('.burger-menu');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+        
+            burger.addEventListener('click',() => {
+                nav.classList.toggle('nav-on');
+        
+            });
+        
+            navLinks.forEach((link,index) => {
+                link.style.animation = `navLinksFade 0.5s ease forwards ${index / 7}s`;
+                console.log(index / 7);
+            });
+        }
+        
+        navSlide();
+    </code></pre>
+</div>
+    <!-- Prims js -->
+    <script src="PrimsJs/prism.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
