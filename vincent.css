@@ -40,11 +40,13 @@ header{
     justify-content: center;
     margin: auto 0;
 }
-.Redirect-Buttons p{
+.Redirect-Buttons a{
     padding: 1vh;
     margin: 5px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
 }
 
 .Redirect-Buttons p:hover{
@@ -125,4 +127,16 @@ header{
 
 .ArrowPresDivTitle{
     font-size: 30px;
+    text-align: start;
+    padding-left: 2vh;
+}
+
+.ArrowPresDivText{
+    padding-right: 2vh;
+    text-align: end;
+}
+
+.prismCode{
+    width: fit-content;
+    margin: auto;
 }
