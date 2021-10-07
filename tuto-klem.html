@@ -10,17 +10,47 @@
 <body>
     <!-- button for 01-learn
     <button>Click me</button> -->
-    
-    <h2>game : find the number</h2>
-    <p class="guesses"></p>
-    <p class="lastResult"></p>
-    <p class="lowOrHi"></p>
-    <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-    <input type="submit" value="Submit guess" class="guessSubmit">
-
-    <h2>button test</h2>
-
-    <button>CLICK ME</button>
+    <nav>
+        <div class="title">
+            <h4>The Nav</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home Page</a>
+            </li>
+            <li>
+                <a href="#">Vincent</a>
+            </li>
+            <li>
+                <a href="#">Patrick</a>
+            </li>
+            <li>
+                <a href="tuto-klem.html">Clement</a>
+            </li>
+        </ul>
+        <div class="burger-menu">
+            <div class="line_1"></div>
+            <div class="line_2"></div>
+            <div class="line_3"></div>
+        </div>
+    </nav>
+    <section class="tuto">
+        <h2 class="title">Welcome on this page ! 
+            you'll find some tutos and things that i hope can help you to understand 
+        </h2>
+        <div class="game">
+            <h2>game : find the number</h2>
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+            <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+            <input type="submit" value="Submit guess" class="guessSubmit">
+        </div>
+        <div class="button">
+            <h2>button test</h2>
+            <button>CLICK ME</button>
+        </div>
+    </section>
 
 <!-- two types of scripts async and defer : 
     async allows to execute the script independently from the rest, it will not prevent to display elements on the page
@@ -29,5 +59,7 @@
 -->
 
 <script async src="tuto-klem.js"></script>
+<script src="main.js"></script>
 </body>
+
 </html>

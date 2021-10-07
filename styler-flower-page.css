@@ -3,6 +3,112 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background: linear-gradient(#d3d156, #c55900);
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+/************************************************************************************* NAVBAR *************************************************************************************/
+body{
+    overflow-x: hidden;/* hide scroll on X axis */
+}
+
+nav{
+    display: flex; 
+    justify-content: space-around; /* set the div and ul with the same space */
+    align-items: center; /* center the elements inside the parent */
+    min-height: 8vh;/* minimum height possible set by hand */
+    background-color: rgba(210, 105, 30, 0.301);
+    color: whitesmoke;/* change the text color */
+}
+
+.title{
+    text-transform: uppercase;/* switch lowercase to uppercase */
+    letter-spacing: 2px;/* put a space between the letters */
+    font-size: 20px;/* change the size of the font */
+}
+
+.nav-links{
+    display: flex;
+    width: 40%;/* change the width of the div */
+    justify-content: space-around;
+    letter-spacing: 1px;
+    font-weight: bolder;/* change the state of the font */
+}
+
+.nav-links li{
+    list-style: none;/* remove the dots in front of the list items */
+}
+
+.nav-links a{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.nav-links a:hover{
+    color: #c55900;
+    font-size: 15px;
+}
+
+.burger-menu{
+    display: none;/* make the burger menu disappear in desktop device */
+    cursor: pointer;
+}
+
+.burger-menu div{
+    width: 30px;/* length of the burger menu lines */
+    height: 3px;/* height of the burger menu lines */
+    background-color: whitesmoke;/* color of the burger menu lines */
+    margin: 5px;/* distribute equitably within the div */
+}
+
+@media screen and (max-width: 1300px){
+/************************************************************************************* NAVBAR RESPONSIVE *************************************************************************************/
+    .nav-links{
+        position: absolute;/* the targeted element becomes independent */
+        right: 0;/* put the div on the right */
+        height: 92vh;/* minimum height possible set by hand for responsive */
+        top: 8vh;/* put the div on the top */
+        background-color: chocolate;
+        box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.329);/* allows to add shadows on divs and the inset property allows to put the shadow inside the div */
+        display: flex;
+        flex-direction: column;/* put the elements of the div in column */
+        align-items: center;/* it defines the alignment of an object in its parent */
+        width: 25%;
+        transform: translateX(100%);/* move the elements according to the X axis */
+        transition: 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger-menu{
+        display: block;/* make the elements reappear */
+    }
+}
+
+.nav-on{
+    transform: translateX(0%);
+}
+
+@keyframes navLinksFade{
+    from{
+        opacity: 0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.tuto{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    margin: 0 auto;
+}
 
 button, .guessSubmit{
     cursor: pointer;
