@@ -57,6 +57,23 @@ nav{
     background-color: whitesmoke;/* color of the burger menu lines */
     margin: 5px;/* distribute equitably within the div */
 }
+/************************************************************************************* MAIN PAGE *************************************************************************************/
+.card{
+    width: 36%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 1%; 
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 5px;
+}
+
+.card-title{
+    padding: 2% 0 5% 5%;
+}
+
+.card-image{
+    overflow: hidden;
+}
 
 @media screen and (max-width: 1300px){
 /************************************************************************************* NAVBAR RESPONSIVE *************************************************************************************/
