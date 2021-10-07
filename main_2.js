@@ -81,7 +81,7 @@ function main() {
 
         var finJeu = 0;
 
-        afficheur.sendMessage("Le jeu peut commencer. choisissez un objet"); // modification du message + choix du joueur
+        afficheur.sendMessage("Le jeu peut commencer, choisissez un objet"); // modification du message + choix du joueur
 //ajout d'une fonction a tabchoixUtilisateur[i] lorsque qu'on click
         tabchoixUtilisateur[i].addEventListener("click", function(){
 // on récupère l'id du choix de l'utilisateur (ciseaux, feuille ou pi)

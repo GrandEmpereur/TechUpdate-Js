@@ -19,10 +19,15 @@ button {
 #block-jeu {
   display:block;
 	margin-left: 25%;
-    margin-top: 250px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .section1 {
     width: 90%;
     margin-left: 5%;
+}
+
+#statut-jeu {
+    font-size: 30px;
 }
