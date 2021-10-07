@@ -115,7 +115,7 @@ header{
 }
 
 .arrowPresentation{
-    height: 100vh;
+    height: max-content;
     background-color: #c55900;
 }
 
@@ -129,6 +129,7 @@ header{
     font-size: 30px;
     text-align: start;
     padding-left: 2vh;
+    padding-top: 1vh;
 }
 
 .ArrowPresDivText{
@@ -139,4 +140,15 @@ header{
 .prismCode{
     width: fit-content;
     margin: auto;
+    padding-bottom: 5vh;
+}
+
+.interPrismCode{
+    text-align: center;
+    padding: 2vh 0 7vh 0;
+}
+
+.scrollingPresentation{
+    height: max-content;
+    background: linear-gradient(#c55900, #d3d156);
 }
