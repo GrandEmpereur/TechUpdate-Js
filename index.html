@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="PrimsJs/prism.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -18,13 +19,13 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#">Home Page</a>
+                <a href="index.html">Soren</a>
             </li>
             <li>
                 <a href="vincent.html">Vincent</a>
             </li>
             <li>
-                <a href="#">Patrick</a>
+                <a href="patrick.html">Patrick</a>
             </li>
             <li>
                 <a href="tuto-klem.html">Clement</a>
@@ -51,10 +52,29 @@
         </div>
     </div>
 </div>
-    <div class="hello">
-        <pre><code class="language-css">p { color: red }</code></pre>
-        <code class="language-css">p { color: red }</code>
-    </div>
+<p class="explain">To do this card you need to :</p>
+<div class="prismCode">
+    <pre><code class="language-css">
+        /* The complete card */
+        .card{
+            width: 36%;
+            margin: 0 auto;
+            margin-top: 5%;
+            padding: 1%; 
+            box-shadow: 0px 5px 20px #999;
+            border-radius: 5px;
+        }
+        /* Title Presentation */
+        .card-title{
+            padding: 2% 0 5% 5%;
+        }
+        /* The card image */
+        .card-image{
+            overflow: hidden;
+        }
+    </code></pre>
+</div>
+<p class="explain-content">It's Simple as that !</p>
     <!-- Prims js -->
     <script src="PrimsJs/prism.js"></script>
     <script src="main.js"></script>
