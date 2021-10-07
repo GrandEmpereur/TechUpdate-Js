@@ -114,5 +114,15 @@ header{
 
 .arrowPresentation{
     height: 100vh;
-    background-image: ;
+    background-color: #c55900;
+}
+
+.ArrowPresDiv{
+    padding: 14vh 0 6vh 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ArrowPresDivTitle{
+    font-size: 30px;
 }
