@@ -8,8 +8,8 @@
 }
 
 body{
-    background-color: gray;
-    height: 300vh;
+    background-color: whitesmoke;
+    height: max-content;
 }
 
 header{
@@ -53,32 +53,10 @@ header{
     transition: 0.5s;
 }
 
-.Display-CanarDevPage{
-    display: flex;
-    justify-content: center;
-}
-
-.Display-CanarDevPage p{
-    padding: 1vh;
-    margin: 5px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.Display-CanarDevPage p:hover{
-    background-color: rgb(70, 70, 0);
-    color: whitesmoke;
-    transition: 0.5s;
-}
-
-.Width-Button-CanarDevPage{
-    width: max-content;
-}
-
 .header-objects-midle{
     display: flex;
     justify-content: center;
-    padding: 5vh 0 5vh 0;
+    padding: 14vh 0 6vh 0;
 }
 
 .Description-Header{
@@ -132,4 +110,9 @@ header{
         color: yellow;
         text-shadow: 0 0 10px rgb(207, 187, 0), 0 0 50px rgb(207, 187, 0), 0 0 80px rgb(207, 187, 0);
     }
+}
+
+.arrowPresentation{
+    height: 100vh;
+    background: linear-gradient(#c55900, #d3d156)
 }
