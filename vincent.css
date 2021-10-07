@@ -9,7 +9,7 @@
 
 body{
     background-color: whitesmoke;
-    height: max-content;
+    height: min-content;
 }
 
 header{
@@ -31,8 +31,6 @@ header{
 .Buttons-Div-Size{
     width: max-content;
     margin: auto 0;
-    padding-left: 15vh;
-
 }
 
 .Redirect-Buttons{
@@ -49,7 +47,7 @@ header{
     text-decoration: none;
 }
 
-.Redirect-Buttons p:hover{
+.Redirect-Buttons a:hover{
     background-color: rgb(31, 31, 31);
     color: whitesmoke;
     transition: 0.5s;
@@ -148,7 +146,88 @@ header{
     padding: 2vh 0 7vh 0;
 }
 
-.scrollingPresentation{
-    height: max-content;
-    background: linear-gradient(#c55900, #d3d156);
+.ScrollPresDiv{
+    padding: 14vh 0 6vh 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ScrollPresDivTitle{
+    font-size: 30px;
+    text-align: End;
+    padding-right: 2vh;
+    padding-top: 1vh;
+}
+
+.ScrollPresDivText{
+    padding-left: 2vh;
+    text-align: start;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+::-webkit-scrollbar-track-piece  {
+    background-color: #d3d156;
+}
+::-webkit-scrollbar-thumb:vertical {
+    height: 15px;
+    background-color: #c55900;
+}
+
+.ButtonActiveScrollBarTuto{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vh;
+}
+
+.ButtonTutoActive{
+    font-family: lato,sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    position: relative;
+    border: 3px solid whitesmoke;
+    border-radius: 25px;
+    background-color: rgb(19, 19, 19);
+}
+
+.ButtonTutoActive:hover{
+    color: rgb(19, 19, 19);
+    border: 3px solid rgb(19, 19, 19);
+    background-color: whitesmoke;
+    transition: 0.5s;
+}
+
+footer {
+    background: var(--bg);
+}
+
+:root{
+    --bg: #11101D;
+    --text: #fff;
+}
+
+footer .credit{
+    display: flex;
+    justify-content: center;
+    color: var(--text);
+    padding: 3vh;
+    text-decoration: none;
+}
+
+footer .credit a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+footer .credit a:hover {
+    transition: all 0.2s;
+    color: #9d9d9e;
+    border-bottom: 1px solid var(--text);
 }
