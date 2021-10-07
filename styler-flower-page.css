@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); /* import a font from google font */
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
-
+body{
+    background: linear-gradient(#d3d156, #c55900);
+    height: 100vh;
+}
 a{
     text-decoration: none;
 }
@@ -19,7 +20,7 @@ nav{
     justify-content: space-around; /* set the div and ul with the same space */
     align-items: center; /* center the elements inside the parent */
     min-height: 8vh;/* minimum height possible set by hand */
-    background-color: chocolate;
+    background-color: rgba(210, 105, 30, 0.301);
     color: whitesmoke;/* change the text color */
 }
 
@@ -43,6 +44,11 @@ nav{
 
 .nav-links a{
     color: whitesmoke;
+    font-size: 15px;
+}
+
+.nav-links a:hover{
+    color: #c55900;
     font-size: 15px;
 }
 
@@ -95,4 +101,28 @@ nav{
         opacity: 1;
         transform: translateX(0);
     }
+}
+.tuto{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    margin: 0 auto;
+}
+
+button, .guessSubmit{
+    cursor: pointer;
+    padding: 1vh;
+    border-radius: 1vh;
+    border: none;
+}
+
+button:hover, .guessSubmit:hover{
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.3s; /* transition between the base css and hover css */
+}
+
+h2{
+    padding: 2vh;
 }
