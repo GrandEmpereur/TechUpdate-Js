@@ -32,8 +32,10 @@ a{
     width: fit-content;
     margin: 0 auto;
 }
-.click_me{
-    margin: 0 auto;
+.containers .click_me{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
 }
 .click_me button, .guessSubmit{
     background: #272822;
