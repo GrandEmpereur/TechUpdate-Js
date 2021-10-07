@@ -42,6 +42,7 @@
      	<button id="ciseaux"><img src="images_1/ciseaux.png"></button>
  	<div id="statut-jeu"></div>
  		</div>
+ 		<div class="section1">
   	<pre><code class="language-js"> 
 		var Afficheur = function(element) {
     	var display = element; // cette variable est chargée de prendre l'élement passer au niveau du constructeur
@@ -55,7 +56,9 @@
 		var scortO = 0;
 		var scortU = 0;
 	</code></pre>
-	<pre><code class="language-js"> 
+	</div>
+	<div class="section1">
+	<pre><code class="language-js">
 		//creation function choix utilisateur (pierre, feuille ou ciseaux)
 		function FchoixUtilisateur(_choixUtilisateur) {
 
@@ -72,6 +75,8 @@
 		}
 		//creation function choix ordi aléatoire (pierre, feuille ou ciseaux)
 	</code></pre>
+    </div>
+	<div class="section1">
 	<pre><code class="language-js"> 
 		function FchoixOrdi() {
 		//retourne un nombre aléatoire entre de 0 a 8
@@ -91,6 +96,8 @@
         return choixOrdi;
 		}
 	</code></pre>
+	</div>
+	<div class="section1">
 	<pre><code class="language-js"> 
 		// Comparaison du choix entre utilisateur et celui de l'ordi
 		function comparer(_choixOrdi, _choixUtilisateur) {
@@ -111,7 +118,8 @@
 
 }
 	</code></pre>
-	<p></p>
+    </div>
+    <div class="section1">
 	<pre><code class="language-js"> 
 		var afficheur = new Afficheur(document.querySelector("#statut-jeu")); // création de l'objet qui va modifier le texte du résultat du jeu
 		
@@ -135,7 +143,7 @@
 		}
 		main();
 	</code></pre>
-	
+	</div>
     <script src="main_2.js"></script>
     <footer>
     </footer>
