@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styler-flower-page.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="PrimsJs/prism.css" rel="stylesheet"/>
     <title>Flower Page</title>
 </head>
 <body>
-    <!-- button for 01-learn
-    <button>Click me</button> -->
     <nav>
         <div class="title">
             <h4>The Nav</h4>
@@ -34,30 +34,56 @@
             <div class="line_3"></div>
         </div>
     </nav>
-    <section class="tuto">
-        <h2 class="title">Welcome on this page ! 
-            you'll find some tutos and things that i hope can help you to understand 
-        </h2>
-        <div class="game">
-            <h2>game : find the number</h2>
-            <p class="guesses"></p>
-            <p class="lastResult"></p>
-            <p class="lowOrHi"></p>
-            <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-            <input type="submit" value="Submit guess" class="guessSubmit">
-        </div>
-        <div class="button">
-            <h2>button test</h2>
+    <h2 class="title">Welcome on this page ! you'll find some tutos and things that i hope can help you to understand how to code in javascript </h2>
+    <div class="game">
+        <h2>Game : find the number !</h2>
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+        <label for="guessField">plz enter a guess :</label><input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+    <div class="code">
+<pre><code class="language-js">
+    // game : find the number 
+            
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+            
+    let guesses = document.querySelector('.guesses');
+    let lastResult = document.querySelector('.lastResult');
+    let lowOrHi = document.querySelector('.lowOrHi');
+            
+    let guessSubmit = document.querySelector('.guessSubmit');
+    let guessField = document.querySelector('.guessField');
+            
+    let guessCount = 1;
+    let resetButton;
+    guessField.focus(); //automatically place the cursor in the text field
+        </code></pre>
+    </div>
+    <div class="code">
+        <div class="click_me">
             <button>CLICK ME</button>
         </div>
-    </section>
+        <div class="container">
+<pre><code class="language-js">
+    const button = document.querySelector('button');
 
+    button.onclick = function() {
+
+        let name = prompt('What\'s your name ?');
+        alert('hi ' + name + ', nice to see you here !');
+
+    }
+</code></pre>
+        </div>
+    </div>
 <!-- two types of scripts async and defer : 
     async allows to execute the script independently from the rest, it will not prevent to display elements on the page
     defer is an attribute that is applied if we want to give a numerical order to our scripts 
     if we want them to run in a specific order
 -->
-
+<script src="PrimsJs/prism.js"></script>
 <script async src="tuto-klem.js"></script>
 <script src="main.js"></script>
 </body>
