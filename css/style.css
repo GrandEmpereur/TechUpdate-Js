@@ -7,6 +7,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+:root{
+  --bg: #11101D;
+  --text: #fff;
+}
+
 /* Nav Bar   */
 
 .sidebar{
@@ -225,4 +231,26 @@
   margin: 2vw;
 }
 
+footer {
+  background: var(--bg);
+}
+
+footer .credit{
+  display: flex;
+  justify-content: center;
+  color: var(--text);
+  padding: 3vh;
+  text-decoration: none;
+}
+
+footer .credit a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+footer .credit a:hover {
+  transition: all 0.2s;
+  color: #9d9d9e;
+  border-bottom: 1px solid var(--text);
+}
 
