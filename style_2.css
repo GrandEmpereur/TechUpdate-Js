@@ -1,0 +1,13 @@
+img {
+  width: 200px;
+  height: 200px;
+}
+
+button {
+  display: inline-block;
+}
+
+#block-jeu {
+  display:block;
+	margin-left: 25%;
+}
