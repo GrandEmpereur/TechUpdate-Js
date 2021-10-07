@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styler-flower-page.css">
+    <link rel="stylesheet" href="css/style-primary.css">
+    <link rel="stylesheet" href="css/styler-flower-page.css">
+    <link href="PrimsJs/prism.css" rel="stylesheet"/>
     <title>Flower Page</title>
 </head>
 <body>
-    <!-- button for 01-learn
-    <button>Click me</button> -->
     <nav>
         <div class="title">
             <h4>The Nav</h4>
@@ -19,13 +19,16 @@
                 <a href="index.html">Home Page</a>
             </li>
             <li>
-                <a href="#">Vincent</a>
+                <a href="vincent.html">Vincent</a>
             </li>
             <li>
-                <a href="#">Patrick</a>
+                <a href="patrick.html">Patrick</a>
             </li>
             <li>
                 <a href="tuto-klem.html">Clement</a>
+            </li>
+            <li>
+                <a href="#">Melvin</a>
             </li>
         </ul>
         <div class="burger-menu">
@@ -34,32 +37,138 @@
             <div class="line_3"></div>
         </div>
     </nav>
-    <section class="tuto">
-        <h2 class="title">Welcome on this page ! 
-            you'll find some tutos and things that i hope can help you to understand 
-        </h2>
-        <div class="game">
-            <h2>game : find the number</h2>
-            <p class="guesses"></p>
-            <p class="lastResult"></p>
-            <p class="lowOrHi"></p>
-            <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
-            <input type="submit" value="Submit guess" class="guessSubmit">
-        </div>
-        <div class="button">
-            <h2>button test</h2>
+    <h2 class="title">Welcome on this page ! you'll find some tutos and things that i hope can help you to understand how to code in javascript </h2>
+    <div class="game">
+        <h2>Game : find the number !</h2>
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+        <label for="guessField">plz enter a guess :</label><input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+    <div class="code">
+        <p>init all variables</p>
+<pre><code class="language-js">
+    // game : find the number 
+            
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+            
+    let guesses = document.querySelector('.guesses');
+    let lastResult = document.querySelector('.lastResult');
+    let lowOrHi = document.querySelector('.lowOrHi');
+            
+    let guessSubmit = document.querySelector('.guessSubmit');
+    let guessField = document.querySelector('.guessField');
+            
+    let guessCount = 1;
+    let resetButton;
+    guessField.focus(); //automatically place the cursor in the text field
+        </code></pre>
+    </div>
+    <div class="code">
+        <p>the code of the main function of the game</p>
+<pre><code class="language-js">
+    function checkGuess() { //function
+        
+        let userGuess = Number(guessField.value); //number is checking if we type a number in the field
+            if (guessCount === 1) {
+                guesses.textContent = 'Propositions précédentes : ';
+            }
+        guesses.textContent += userGuess + ' ';
+                
+        if (userGuess === randomNumber) {
+            lastResult.textContent = 'well done, you have find the right number !';
+            lastResult.style.backgroundColor = 'green';
+            lowOrHi.textContent = '';
+            setGameOver();
+        } else if (guessCount === 10) {
+            lastResult.textContent = '!!! you lose !!!';
+            setGameOver();
+        } else {
+            lastResult.textContent = 'False!';
+            lastResult.style.backgroundColor = 'red';
+            if (userGuess < randomNumber) {
+            lowOrHi.textContent = 'the number you type is to small !';
+            } else if (userGuess > randomNumber) {
+            lowOrHi.textContent = 'the number you type is to big !';
+            }
+        }
+            guessCount++;
+            guessField.value = '';
+            guessField.focus();
+        }
+        guessSubmit.addEventListener('click', checkGuess);
+</code></pre>
+    </div>
+    <div class="containers">
+        <div class="code">
+            <p>init the function if you lose the round</p>
+    <pre><code class="language-js">
+        function setGameOver() {
+    
+            guessField.disabled = true;
+            guessSubmit.disabled = true;
+            resetButton = document.createElement('button');
+            resetButton.textContent = 'Start new game';
+            document.body.appendChild(resetButton);
+            resetButton.addEventListener('click', resetGame);
+        }
+    </code></pre>
+    <div class="containers">
+        <div class="click_me">
             <button>CLICK ME</button>
         </div>
-    </section>
-
+        <div class="container">
+<pre><code class="language-js">
+const button = document.querySelector('button');
+            
+button.onclick = function() {
+            
+let name = prompt('What\'s your name ?');
+alert('hi ' + name + ', nice to see you here !');
+            
+}
+</code></pre>
+        </div>
+    </div>
+        </div>
+        <div class="code">
+            <p>init the function for reset the game and replay</p>
+    <pre><code class="language-js">
+        function resetGame() {
+    
+            guessCount = 1;
+        
+            let resetParas = document.querySelectorAll('.resultParas p');
+            for (let i = 0 ; i < resetParas.length ; i++) {
+                resetParas[i].textContent = '';
+            }
+        
+            resetButton.parentNode.removeChild(resetButton);
+        
+            guessField.disabled = false;
+            guessSubmit.disabled = false;
+            guessField.value = '';
+            guessField.focus();
+        
+            lastResult.style.backgroundColor = 'white';
+        
+            randomNumber = Math.floor(Math.random() * 100) + 1;
+        
+        }       
+    </code></pre>
+        </div>
+    </div>
+    <div class="code">
+    </div>
 <!-- two types of scripts async and defer : 
     async allows to execute the script independently from the rest, it will not prevent to display elements on the page
     defer is an attribute that is applied if we want to give a numerical order to our scripts 
     if we want them to run in a specific order
 -->
-
-<script async src="tuto-klem.js"></script>
-<script src="main.js"></script>
+<script src="PrimsJs/prism.js"></script>
+<script async src="js/tuto-klem.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>

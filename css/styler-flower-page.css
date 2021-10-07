@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#d3d156, #c55900);
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.game{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.containers{
+    display: flex;
+    flex-direction: row;
+}
+.code{
+    padding: 1rem;
+    display : flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+}
+.containers .click_me{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+.click_me button, .guessSubmit{
+    background: #272822;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 1vh;
+    border-radius: 3px;
+    border: none;
+}
+
+button:hover, .guessSubmit:hover{
+    color: chocolate;
+    transition: 0.3s; /* transition between the base css and hover css */
+}
+
+h2{
+    padding: 2vh;
+}

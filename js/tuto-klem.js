@@ -59,9 +59,9 @@ function checkGuess() { //function
         }
     }
 
-guessCount++;
-guessField.value = '';
-guessField.focus();
+    guessCount++;
+    guessField.value = '';
+    guessField.focus();
 }
 guessSubmit.addEventListener('click', checkGuess);
 
@@ -106,12 +106,9 @@ let greeting = name + hello;
 greeting;
 
 const button = document.querySelector('button');
-
 button.onclick = function() {
-
     let name = prompt('What\'s your name ?');
     alert('hi ' + name + ', nice to see you here !');
-
 }
 let myName = 'clément';
 let age = 20;
