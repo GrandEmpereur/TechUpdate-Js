@@ -82,6 +82,12 @@
                 }
             }</code></pre>
         </div>
+        <section id="ActiveButton">
+        <div class="centerButton">
+            <button class="ButtonShow" onclick="ActiveSection()">What append if you click me ?</button>
+        </div>
+        </section>
+        <section id="Active" class="Display">
         <div class="ScrollPresDiv">
             <div class="ScrollPresDivTitle">
                 <h2>WOW this scroll bar !</h2>
@@ -91,10 +97,8 @@
                 <h4>(I Love CSS)</h4>
             </div>
         </div>
-
         <div class="prismCode">
-            <pre><code class="language-css">
-::-webkit-scrollbar {
+            <pre><code class="language-css">::-webkit-scrollbar {
     width: 12px;
     height: 12px;
 }
@@ -106,6 +110,29 @@
     background-color: #c55900;
 }</code></pre>
         </div>
+
+
+        <div class="ButtonActiveDiv">
+            <div class="ButtonTextText">
+                <h3>This increadible button <br>is used to hide or show 2 tuto !</h3>
+                <h4>(I Love JS with moderation)</h4>
+            </div>
+            <div class="ButtonTextTitle">
+                <h2>OMG This button is MAGIC !</h2>
+            </div>
+        </div>
+        <div class="prismCode">
+            <pre><code class="language-js">function ActiveSection() {
+var ActiveButton = document.getElementById('ActiveButton');
+ActiveButton.classList.toggle("Display");
+var Active = document.getElementById('Active');
+Active.classList.toggle("Display");
+}</code></pre>
+        </div>
+        <div class="centerButton">
+            <button class="ButtonShow" onclick="ActiveSection()">Click me to hide the section !</button>
+        </div>
+    </section>
     </article>
     <footer>
         <div class="credit">
