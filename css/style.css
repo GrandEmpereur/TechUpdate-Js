@@ -184,6 +184,21 @@
   z-index: 2; 
 }
 
+.text-contant{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text-contant > span{
+  padding: 8px;
+  
+}
+
+
+
 .card h2 {
   display: flex;
   justify-content: center;
@@ -229,6 +244,27 @@
 .home-section .card .cour .section3 pre {
   width: 1000px;
   margin: 2vw;
+}
+
+.home-section .card .cour .section4  {
+  display: flex;
+  justify-content: center;
+}
+
+.home-section .card .cour .section4 pre {
+  width: 500px;
+  margin: 2vw;
+}
+
+.home-section .card .cour .section5  {
+  display: flex;
+  justify-content: center;
+}
+
+.home-section .card .cour .section5 pre {
+  width: 800px;
+  margin: 2vw;
+  
 }
 
 /* ScrollBar  */
