@@ -114,26 +114,27 @@
             resetButton.addEventListener('click', resetGame);
         }
     </code></pre>
+        </div>
+    </div>
     <div class="containers">
         <div class="click_me">
             <button>CLICK ME</button>
         </div>
-        <div class="container">
-<pre><code class="language-js">
-const button = document.querySelector('button');
-            
-button.onclick = function() {
-            
-let name = prompt('What\'s your name ?');
-alert('hi ' + name + ', nice to see you here !');
-            
-}
-</code></pre>
+        <div class="code">
+            <pre><code class="language-js">
+                const button = document.querySelector('button');
+                            
+                button.onclick = function() {
+                            
+                let name = prompt('What\'s your name ?');
+                alert('hi ' + name + ', nice to see you here !');
+                            
+                }
+                </code></pre>
         </div>
     </div>
-        </div>
-        <div class="code">
-            <p>init the function for reset the game and replay</p>
+    <div class="code">
+        <p>init the function for reset the game and replay</p>
     <pre><code class="language-js">
         function resetGame() {
     
@@ -157,10 +158,14 @@ alert('hi ' + name + ', nice to see you here !');
         
         }       
     </code></pre>
-        </div>
     </div>
     <div class="code">
     </div>
+    <footer>
+        <div class="credit">    
+            <p>Created By <a href="https://github.com/ClemOurs" target="_blank">Clément</a> | &copy; 2021 All rights reserved.</p>
+        </div>
+    </footer>
 <!-- two types of scripts async and defer : 
     async allows to execute the script independently from the rest, it will not prevent to display elements on the page
     defer is an attribute that is applied if we want to give a numerical order to our scripts 
