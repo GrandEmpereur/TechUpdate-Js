@@ -18,9 +18,8 @@ button {
 
 #block-jeu {
   display:block;
-	margin-left: 25%;
-    margin-top: 150px;
-    margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section1 {
@@ -31,3 +30,36 @@ button {
 #statut-jeu {
     font-size: 30px;
 }
+
+.jeu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 300px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+footer {
+  background: #11101D;
+}
+
+footer .credit{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 3vh;
+  text-decoration: none;
+}
+
+footer .credit a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .credit a:hover {
+  transition: all 0.2s;
+  color: #9d9d9e;
+  border-bottom: 1px solid #fff;
+}
+
