@@ -78,7 +78,7 @@ nav{
 }
 
 .prismCode{
-    width: fit-content;
+    width: 90%;
     margin: auto;
     padding-bottom: 5vh;
 }
@@ -127,7 +127,7 @@ footer .credit a:hover {
 }
 
 @media screen and (max-width: 1300px){
-/************************************************************************************* RESPONSIVE *************************************************************************************/
+/************************************************************************************* NAVBAR RESPONSIVE *************************************************************************************/
     .nav-links{
         position: absolute;/* the targeted element becomes independent */
         right: 0;/* put the div on the right */
