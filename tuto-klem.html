@@ -39,7 +39,7 @@
     </nav>
     <header>
         <p class="title">Welcome user !</p>
-        <p class="txt"> you have problems to do some stuff in JS ? 
+        <p class="pad"> you have problems to do some stuff in JS ? 
             here, you'll find some exercises that i hope can help in your learning. 
             Good luck Padawan, and may the force be with you ! 
         </p>
@@ -152,24 +152,29 @@ function resetGame() {
 }       
 </code></pre>
     </div>
-    <div class="flex">
-        <h3>use a button with JS :</h3>
-        <p>test the button right here :)</p>
-        <div class="click_me">
-            <button>CLICK ME</button>
-    </div>
+    <div class="container">
+        <div class="flex">
+            <h3>use a button with JS :</h3>
+            <div class="pad">
+                <p>test the button right here :)</p>
+                <div class="click_me">
+                    <button>CLICK ME</button>
+                </div>
+            </div>
+        </div>
         <div class="code">
 <pre><code class="language-js">
 const button = document.querySelector('button');
-                            
+                                
 button.onclick = function() {
-                            
+                                
 let name = prompt('What\'s your name ?');
 alert('hi ' + name + ', nice to see you here !');
-                            
+                                
 }
 </code></pre>
         </div>
+    </div>
     </div>
     <footer>
         <div class="credit">    
