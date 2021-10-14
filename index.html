@@ -8,7 +8,7 @@
     <link href="PrimsJs/prism.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link href="https://s2.qwant.com/thumbr/0x0/c/c/d0f94c675483d8b0489921acc9fe3dd1029eb301b6218edf1803d8dfc1aa37/flower-190-152-301758.png?u=https%3A%2F%2Fwww.freefavicon.com%2Ffreefavicons%2Fplants%2Fflower-190-152-301758.png&q=0&b=1&p=0&a=0" rel="shortcut icon" >
     <!-- Prims Css -->
     <link href="PrimsJs/prism.css" rel="stylesheet" />
     <title>Home</title>
@@ -124,6 +124,40 @@
         }
     </code></pre>
 </div>
+<p class="explain-nav">To do the burger menu you need to do this :</p>
+<div class="prismCode">
+    <pre><code class="language-css">
+        .nav-links{
+            /* the targeted element becomes independent */
+            position: absolute;
+            /* put the div on the right */
+            right: 0;
+            /* minimum height possible set by hand for responsive */
+            height: 92vh;
+            /* put the div on the top */
+            top: 8vh;
+            background-color: chocolate;
+            /* allows to add shadows on divs and the inset property allows to put the shadow inside the div */
+            box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.329);
+            display: flex;
+            /* put the elements of the div in column */
+            flex-direction: column;
+            /* it defines the alignment of an object in its parent */
+            align-items: center;
+            width: 25%;
+            /* move the elements according to the X axis */
+            transform: translateX(100%);
+            transition: 0.5s ease-in;
+        }
+        .nav-links li{
+            opacity: 0;
+        }
+        .burger-menu{
+            /* make the elements reappear */
+            display: block;
+        }
+    </code></pre>
+</div>
 <p class="explain-nav">and for the javascript you need to do :</p>
 <div class="prismCode">
     <pre><code class="language-js">
@@ -146,6 +180,11 @@
         navSlide();
     </code></pre>
 </div>
+<footer>
+    <div class="credit">
+        <p>Created By <a href="https://github.com/SorenMesselier-Sentis" target="_blank">Soren</a> | &copy; 2021 All rights reserved.</p>
+    </div>
+</footer>
     <!-- Prims js -->
     <script src="PrimsJs/prism.js"></script>
     <script src="js/main.js"></script>

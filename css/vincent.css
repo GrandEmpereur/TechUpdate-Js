@@ -164,6 +164,52 @@ header{
     text-align: start;
 }
 
+.centerButton {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+}
+
+.ButtonShow {
+    padding: 20px 50px 20px 50px;
+    border-radius: 15px;
+    background-color: rgb(44, 44, 44)/*transparent*/;
+    color: whitesmoke;
+    font-size: 26px;
+    border-style: none;
+    margin-top: 20px;
+    transition: 0.2s;
+
+}
+
+.ButtonShow:hover {
+    background-color: rgb(22, 22, 22)/*transparent*/;
+    transition: 0.2s;
+}
+
+.Display {
+display: none;
+}
+
+.ButtonActiveDiv{
+    padding: 14vh 0 6vh 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ButtonTextTitle{
+    font-size: 30px;
+    text-align: start;
+    padding-left: 2vh;
+    padding-top: 1vh;
+}
+
+.ButtonTextText{
+    padding-right: 2vh;
+    text-align: end;
+}
+
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
@@ -180,28 +226,6 @@ header{
     display: flex;
     justify-content: center;
     padding-bottom: 5vh;
-}
-
-.ButtonTutoActive{
-    font-family: lato,sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    color: whitesmoke;
-    display: inline-block;
-    padding: 10px 40px 10px 40px;
-    position: relative;
-    border: 3px solid whitesmoke;
-    border-radius: 25px;
-    background-color: rgb(19, 19, 19);
-}
-
-.ButtonTutoActive:hover{
-    color: rgb(19, 19, 19);
-    border: 3px solid rgb(19, 19, 19);
-    background-color: whitesmoke;
-    transition: 0.5s;
 }
 
 footer {

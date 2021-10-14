@@ -9,3 +9,10 @@ btn.addEventListener('click', () => {//when we click on the arrow, this append:
     })
 
 });
+
+function ActiveSection() {
+    var ActiveButton = document.getElementById('ActiveButton');
+    ActiveButton.classList.toggle("Display");
+    var Active = document.getElementById('Active');
+    Active.classList.toggle("Display");
+}

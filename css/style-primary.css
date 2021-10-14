@@ -78,7 +78,7 @@ nav{
 }
 
 .prismCode{
-    width: fit-content;
+    width: 90%;
     margin: auto;
     padding-bottom: 5vh;
 }
@@ -102,6 +102,30 @@ nav{
     font-size: 20px;
 }
 
+/************************************************************************************* FOOTER *************************************************************************************/
+footer {
+    background: chocolate;
+}
+
+footer .credit{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    padding: 3vh;
+    text-decoration: none;
+}
+
+footer .credit a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer .credit a:hover {
+    transition: all 0.2s;
+    color: #9d9d9e;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1300px){
 /************************************************************************************* NAVBAR RESPONSIVE *************************************************************************************/
     .nav-links{
@@ -123,6 +147,10 @@ nav{
     }
     .burger-menu{
         display: block;/* make the elements reappear */
+    }
+
+    .card {
+        width: 100%;
     }
 }
 
